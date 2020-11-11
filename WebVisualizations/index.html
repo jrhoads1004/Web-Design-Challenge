@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temp Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>  
+  <!-- 1.- NAVIGATION BAR -->
+  <div class="bar_navigate">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="00_index.html">LATTITUDE PLOT ANALYSIS</a>
+      <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+​
+      <!-- TOGGLE images -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">Data Images</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="01_temperature.html">Temperature</a>
+              <a class="dropdown-item" href="02_humidity.html">Humidity</a>
+              <a class="dropdown-item" href="03_cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="04_windspeed.html">Wind-Speed</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="05_comparative.html">Comparative</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="06_sourcedata.html">Source-Data</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  
+​
+<!-- CONTAINER DEFINITION -->
+  <div class="container">
+    <section class="row">
+      <div class="col-lg-7 col-md-16">
+        <div class="description-content">
+          <h1 class="description-header">Hummidity vs. Wind-Speed Analysis</h1>
+          <hr>
+          <img src="./Assets/HumidWind.png" alt="Humidity vs. Wind Speed" class="description-image">
+          
+          <p>>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+          After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+        <hr> 
+        <p>All the Temperature records were taken from the sampling taken on 10/08/2019 (Matplotlib Homework)</p>
+        <hr>
+        </div>
+      </div>
+
+​
+        <!-- CLASSESE DEFINITION FOR THE LEFT DASHBOARD-->
+  <div class="col-lg-5 col-md-18">
+        <section id="imageNav-area">
+          <div class="imageNav-content">
+            <h2 class="imageNav-header">VIZUALIZATIONS</h2>
+            <hr />
+            <div class="container">
+              <div class="row">
+                <div class="col-18">
+                  <a href="01_temperature.html">                   
+                   <img src="./Assets/CityLatTempMax.png" alt="Latitude vs. Max Temperature", title="Latitude vs. Max Temperature" class="imageNav-photo">
+                 </a>
+                </div>
+                <div class="col-18">
+                  <a href="02_humidity.html">
+                    <img src="./Assets/CityLatHumid.png" alt="Latitude vs. Humidity", title="Latitude vs. Humidity" class="imageNav-photo">
+                  </a>
+                  </div>
+                <div class="col-18">
+                  <a href="03_cloudiness.html">
+                    <img src="./Assets/CityLatCloud.png" alt="Latitude vs. Cloudiness", title="Latitude vs. Cloudiness", class="imageNav-photo">
+                  </a>
+                </div>
+                <div class="col-18">
+                  <a href="04_windspeed.html">
+                    <img src="./Assets/CityLatWind.png" alt="Latitude vs. Wind Speed", title="Latitude vs. Wind Speed", class="imageNav-photo">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+​
+      </div>
+    </section>
+  </div>
+
+​
+  <!-- FOOTER CODING -->
+  <footer>
+    <div class="footer">&copy; Copyright Ricardo Reynoso Bootcamp Trilogy/ITESM</div>
+  </footer>
+  
+​
+
+  <!-- BOOTSTRAP REFERENCES AND JAVASCRIPT BOTH SOURCES-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+
+
+
+
+</body>
+</html>
